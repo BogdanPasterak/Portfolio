@@ -2,27 +2,34 @@ html,
 body,
 #container {
   width: 100%;
-  min-width: 315px;
+  font-family: Dosis, sans-serif;
+  margin: auto;
+}
+
+#container {
+  min-width: 300px;
   display: flex;
   flex-direction: row;
   max-width: 1270px;
-  margin: auto;
-  font-family: Dosis, sans-serif;
 }
 
 h1 {
   font-family: 'Short Stack', cursive;
+  margin: 0.5em;
 }
 
 aside {
   min-width: 140px;
+  position: static;
+  top: 0;
+  left: 0;
 }
 
 article {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 header {
@@ -30,9 +37,13 @@ header {
   padding: 10px 10px 0 10px;
 }
 
-header > h1 {
+.bp {
   font-size: 2.5em;
   margin: 0;
+}
+
+.short {
+    display: none;
 }
 
 header > p {
@@ -62,7 +73,6 @@ hr {
 
 .boxFeature {
   width: 32%;
-  background-color: pink;
   margin-left: 1%;
 }
 
@@ -70,7 +80,15 @@ hr {
   margin-top: 60px;
 }
 
-#uSign {
+#hamburger {
+  display: none;
+  font-size: 2.5em;
+  position: fixed;
+  left: 110px;
+  top: 20px;
+}
+
+#u-sign {
   float: left;
   width: 96px;
   height: 96px;
@@ -90,4 +108,43 @@ hr {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 915px) {
+  .boxFeature {
+    width: 47%;
+    margin-left: 2%;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  aside {
+    position: fixed;
+    left: -140px;
+  }
+  #hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .boxFeature {
+    width: 90%;
+    margin-left: 5%;
+  }
+  #u-sign {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .full {
+    display: none;
+  }
+  .short {
+    display: block;
+  }
 }
