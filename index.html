@@ -9,6 +9,8 @@
 	<link href="styles.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Short+Stack" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <script src="myLib.js"></script>
+  <script src="jqscript.js"></script>
 	<!-- https://github.com/BogdanPasterak/Portfolio -->
 </head>
 <body>
@@ -23,7 +25,7 @@
     </aside>
     <article>
       <header>
-        <img src="u_sign.png" id="uSign" width="128" height="128">
+        <img src="u_sign.png" alt="Udacity logo" id="uSign" width="128" height="128">
         <h1>
           Bogdan Pasterak
         </h1>
@@ -32,8 +34,32 @@
         </p>
         <hr>
       </header>
+      <div id="game"><canvas id="canvas" width="0" height="0"></canvas></div>
+      <h1>Featured Work</h1>
+      <div id="feature">
+        <div class="boxFeature">
+          <video width="100%" autoplay loop>
+            <source src="cogs.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>https://github.com/BogdanPasterak/cogs</p>
+
+        </div>
+        <div class="boxFeature">
+          <video width="100%" autoplay loop>
+            <source src="Uroll.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>https://bogdanpasterak.github.io/MyWeb/my_works.html</p>
+        </div>
+        <div class="boxFeature">
+          <video width="100%" autoplay loop>
+            <source src="pam.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>https://bogdanpasterak.github.io/project-pixel-art-maker-starter/</p>
+        </div>
+      </div>
     </article>
-    <h1>font-family: 'Short Stack', cursive;</h1>
-    font-family: 'Dosis', sans-serif;
   </div>
 </body>

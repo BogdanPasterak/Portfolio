@@ -2,6 +2,9 @@ html,
 body,
 #container {
   width: 100%;
+  min-width: 315px;
+  display: flex;
+  flex-direction: row;
   max-width: 1270px;
   margin: auto;
   font-family: Dosis, sans-serif;
@@ -12,20 +15,19 @@ h1 {
 }
 
 aside {
-  width: 20%;
-  float: left;
+  min-width: 140px;
 }
 
 article {
-  width: 80%;
-  float: right;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: yellow;
-  height: 300px;
 }
 
 header {
   text-align: right;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
 }
 
 header > h1 {
@@ -33,18 +35,35 @@ header > h1 {
   margin: 0;
 }
 
+header > p {
+  margin: 1em 0 1em 0;
+}
+
 hr {
     height: 12px;
     border: 0;
+    margin: 0;
     box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
 .boxColor {
-  width: 90%;
-  max-width: 120px;
+  width: 120px;
   height: 120px;
   background-color: blue;
-  margin: 5%;
+  margin: 10px;
+}
+
+#feature {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+.boxFeature {
+  width: 32%;
+  background-color: pink;
+  margin-left: 1%;
 }
 
 .boxColor:first-child {
@@ -53,4 +72,22 @@ hr {
 
 #uSign {
   float: left;
+  width: 96px;
+  height: 96px;
+}
+
+#game {
+  margin: 15px;
+  padding: 5px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#canvas {
+  background-color: rgb(255, 255, 255);
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
