@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Design</title>
+  <title>Portfolio</title>
   <meta name="author" content="Bogdan Pasterak">
 	<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +9,16 @@
 	<link href="styles.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Short+Stack" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <script src="my-scrypt.js"></script>
+  <!-- Two scripts to handle canva in the middle of the page -->
+  <!-- it comes from another project, it is not described, the project is not finished -->
   <script src="myLib.js"></script>
   <script src="jqscript.js"></script>
 	<!-- https://github.com/BogdanPasterak/Portfolio -->
 </head>
 <body>
   <div id="container">
-    <aside>
+    <aside onclick="hideMenu();">
       <div class="boxColor">
       </div>
       <div class="boxColor">
@@ -26,8 +29,8 @@
     <article>
       <header>
         <img src="u_sign.png" alt="Udacity logo" id="u-sign" width="128" height="128">
-        <p id="hamburger">
-          &#9776;
+        <p id="hamburger" onclick="showMenu();">
+          &#9776; <!-- hamburger -->
         </p>
         <h1 class="bp full">
           Bogdan Pasterak
@@ -49,45 +52,39 @@
         <div class="boxFeature">
           <video width="100%" autoplay loop>
             <source src="cogs.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            Rotating modes and pulleys.
           </video>
           <p>
             Fun cogs
-            &nbsp
             <a href="https://github.com/BogdanPasterak/cogs" target="_blank">
-              <strong>on GitHub</strong>
+              <strong> on GitHub </strong>
             </a>
-            &nbsp
             in Java
           </p>
         </div>
         <div class="boxFeature">
           <video width="100%" autoplay loop>
             <source src="Uroll.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            Turning Udacity wheel.
           </video>
           <p>
             Moving elements
-            &nbsp
             <a href="https://bogdanpasterak.github.io/MyWeb/my_works.html" target="_blank">
-              on GitHub
+              <strong> on GitHub </strong>
             </a>
-            &nbsp
             in CSS
           </p>
         </div>
         <div class="boxFeature">
           <video width="100%" autoplay loop>
             <source src="pam.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            Project: Pixel Art Maker.
           </video>
           <p>
             Udacity project
-            &nbsp
             <a href="https://bogdanpasterak.github.io/project-pixel-art-maker-starter/" target="_blank">
-              <strong>on GitHub</strong>
+              <strong> on GitHub </strong>
             </a>
-            &nbsp
             in JavaScript
           </p>
         </div>

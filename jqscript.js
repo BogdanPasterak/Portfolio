@@ -9,8 +9,6 @@ let ctxClock;
 let offImg;
 let onImg;
 
-const forBits = [4];
-
 document.addEventListener("DOMContentLoaded", function(event) {
 
 	window.addEventListener("resize", myResize);
