@@ -4,11 +4,19 @@
 * 20/2/2018
 */
 
+
+// TODO: Registration of the episodes for three colored squares of the menu
+
 document.addEventListener("DOMContentLoaded", function(event) {
   const squeres = document.getElementsByClassName("squere");
 
   squeres[0].addEventListener("click", firstSquere);
+  squeres[1].addEventListener("click", secondSquere);
+  squeres[2].addEventListener("click", thirdSquere);
 });
+
+
+// TODO: The first is a bit transformed using css keyframes
 
 const firstSquere = () => {
   const squereOne = document.getElementById("color-1");
@@ -18,8 +26,44 @@ const firstSquere = () => {
   // turn off delayed for reuse
   setTimeout(function() {
     squereOne.removeAttribute("style");
+    hideMenu();
   }, 5000);
 };
+
+
+// TODO: The second moves divs in the div feature
+
+const secondSquere = () => {
+  const boxFeature = document.getElementsByClassName("box-feature")[0];
+  const feature = document.getElementById("feature");
+  // My challenge FadeOut and FadeIn without jQuery !!!
+  boxFeature.style.animation = "fade-out 3s 1";
+
+  // switching from position 1 to the end with smooth blanking
+  setTimeout(function() {
+    boxFeature.style.display = "none";
+    feature.appendChild(boxFeature);
+    boxFeature.style.animation = "fade-in 3s 1";
+    boxFeature.style.display = "block";
+  }, 2900);
+
+  // turn off delayed for reuse
+  setTimeout(function() {
+    boxFeature.removeAttribute("style");
+  }, 5800);
+
+  hideMenu();
+};
+
+
+// TODO: The third creates an additional snakes on the canvas
+
+const thirdSquere = () => {
+  snake = new Snake();
+  snake.start();
+  hideMenu();
+};
+
 
 // TODO: Two functions to operate the hide-away menu
 

@@ -182,3 +182,13 @@ hr {
     75% { transform: rotate3d(2, 1, 3, 270deg); background-color: purple;}
     100% { transform: rotate3d(0, 0, 0, 360deg); background-color: #02b3e4;}
 }
+
+@keyframes fade-out {
+  from { opacity: 1;}
+  to { opacity: 0;}
+}
+
+@keyframes fade-in {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
