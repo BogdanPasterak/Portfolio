@@ -118,7 +118,7 @@ const Snake = function() {
 
 Snake.prototype.start = function(speed) {
   // if not set make 1/5 second
-  if (speed === undefined) { speed = 200;}
+  if (speed === undefined) { speed = 50;}
   else {
     if (this.interval != undefined){
       clearInterval(this.interval);

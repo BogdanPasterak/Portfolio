@@ -4,6 +4,23 @@
 * 20/2/2018
 */
 
+document.addEventListener("DOMContentLoaded", function(event) {
+  const squeres = document.getElementsByClassName("squere");
+
+  squeres[0].addEventListener("click", firstSquere);
+});
+
+const firstSquere = () => {
+  const squereOne = document.getElementById("color-1");
+
+  squereOne.style.animation = "change-shape 5s 1";
+
+  // turn off delayed for reuse
+  setTimeout(function() {
+    squereOne.removeAttribute("style");
+  }, 5000);
+};
+
 // TODO: Two functions to operate the hide-away menu
 
 const showMenu = () => {

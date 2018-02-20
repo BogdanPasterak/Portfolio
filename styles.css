@@ -57,11 +57,37 @@ hr {
     box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
-.boxColor {
+.box-color {
   width: 120px;
-  height: 120px;
-  background-color: blue;
+  height: 130px;
   margin: 10px;
+  font-size: 2em;
+}
+
+.box-color p {
+  position: relative;
+  bottom: -90px;
+  left: 5px;
+}
+
+.squere {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: -68px;
+  right: -35px;
+}
+
+#color-1 {
+  background-color: #02b3e4;
+}
+
+#color-2 {
+  background-color: #2d3c49;
+}
+
+#color-3 {
+  background-color: #7d97ad;
 }
 
 #feature {
@@ -71,12 +97,12 @@ hr {
   margin: 0;
 }
 
-.boxFeature {
+.box-feature {
   width: 32%;
   margin-left: 1%;
 }
 
-.boxColor:first-child {
+.box-color:first-child {
   margin-top: 60px;
 }
 
@@ -111,7 +137,7 @@ hr {
 }
 
 @media screen and (max-width: 915px) {
-  .boxFeature {
+  .box-feature {
     width: 47%;
     margin-left: 2%;
   }
@@ -128,7 +154,7 @@ hr {
 }
 
 @media screen and (max-width: 550px) {
-  .boxFeature {
+  .box-feature {
     width: 90%;
     margin-left: 5%;
   }
@@ -147,4 +173,12 @@ hr {
   .short {
     display: block;
   }
+}
+
+@keyframes change-shape {
+    0% { transform: rotate3d(1, 0, 0, 0deg); background-color: #02b3e4;}
+    25% { transform: rotate3d(3, 2, 0, 90deg); background-color: yellow;}
+    50% { transform: rotate3d(1, 2, 0.5, 180deg); background-color: red;}
+    75% { transform: rotate3d(2, 1, 3, 270deg); background-color: purple;}
+    100% { transform: rotate3d(0, 0, 0, 360deg); background-color: #02b3e4;}
 }

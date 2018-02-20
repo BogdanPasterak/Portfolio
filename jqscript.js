@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			//Snake.randFood();
 		}
 
-		snake.start(30);
+		snake.start(50);
 
 	}
 	//initGame();
