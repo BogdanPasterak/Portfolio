@@ -10,6 +10,9 @@
   <link href="https://fonts.googleapis.com/css?family=Short+Stack" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   <script src="my-scrypt.js"></script>
+  <!-- scripts and stylesheet to show image, video itp without jQuery -->
+  <script src="showBP.js"></script>
+  <link href="showBP.css" rel="stylesheet">
   <!-- Two scripts to handle canva in the middle of the page -->
   <!-- it comes from another project, it is not described, the project is not finished -->
   <script src="myLib.js"></script>
@@ -17,7 +20,7 @@
 	<!-- https://github.com/BogdanPasterak/Portfolio -->
 </head>
 <body>
-  <div id="container">
+  <div id="container" class="hideBP">
     <aside>
       <div class="box-color">
         <p>#02b3e4</p>
@@ -56,7 +59,7 @@
       <h1>Featured Work</h1>
       <div id="feature">
         <div class="box-feature">
-          <video width="100%" autoplay loop>
+          <video class="showBP" width="100%" autoplay loop>
             <source src="cogs.mp4" type="video/mp4">
             Rotating modes and pulleys.
           </video>
@@ -69,7 +72,7 @@
           </p>
         </div>
         <div class="box-feature">
-          <video width="100%" autoplay loop>
+          <video class="showBP" width="100%" autoplay loop>
             <source src="Uroll.mp4" type="video/mp4">
             Turning Udacity wheel.
           </video>
@@ -82,7 +85,7 @@
           </p>
         </div>
         <div class="box-feature">
-          <video width="100%" autoplay loop>
+          <video class="showBP" width="100%" autoplay loop>
             <source src="pam.mp4" type="video/mp4">
             Project: Pixel Art Maker.
           </video>

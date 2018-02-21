@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   squeres[0].addEventListener("click", firstSquere);
   squeres[1].addEventListener("click", secondSquere);
   squeres[2].addEventListener("click", thirdSquere);
-});
 
+});
 
 // TODO: The first is a bit transformed using css keyframes
 
@@ -37,20 +37,20 @@ const secondSquere = () => {
   const boxFeature = document.getElementsByClassName("box-feature")[0];
   const feature = document.getElementById("feature");
   // My challenge FadeOut and FadeIn without jQuery !!!
-  boxFeature.style.animation = "fade-out 3s 1";
+  boxFeature.style.animation = "fade-out 1s 1";
 
   // switching from position 1 to the end with smooth blanking
   setTimeout(function() {
     boxFeature.style.display = "none";
     feature.appendChild(boxFeature);
-    boxFeature.style.animation = "fade-in 3s 1";
+    boxFeature.style.animation = "fade-in 1s 1";
     boxFeature.style.display = "block";
-  }, 2900);
+  }, 900);
 
   // turn off delayed for reuse
   setTimeout(function() {
     boxFeature.removeAttribute("style");
-  }, 5800);
+  }, 1800);
 
   hideMenu();
 };
