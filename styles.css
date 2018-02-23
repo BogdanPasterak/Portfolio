@@ -109,7 +109,7 @@ hr {
 #hamburger {
   display: none;
   font-size: 2.5em;
-  position: fixed;
+  position: absolute;
   left: 110px;
   top: 20px;
 }
@@ -159,7 +159,7 @@ hr {
     margin-left: 5%;
   }
   #u-sign {
-    position: fixed;
+    position: absolute;
     left: 10px;
     top: 10px;
     z-index: -1;
