@@ -1,3 +1,7 @@
+/* Udacity project - Portfolio */
+/* Bogdan Pasterak */
+
+/* main elements */
 html,
 body,
 #container {
@@ -38,9 +42,11 @@ header {
 }
 
 video {
+  width: 100%;
   border: 3px solid lightgray;
 }
 
+/* my name */
 .bp {
   font-size: 2.5em;
   margin: 0;
@@ -54,6 +60,7 @@ header > p {
   margin: 1em 0 1em 0;
 }
 
+/* line stylization */
 hr {
     height: 12px;
     border: 0;
@@ -61,6 +68,7 @@ hr {
     box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
+/* elements in aside */
 .box-color {
   width: 120px;
   height: 130px;
@@ -94,6 +102,7 @@ hr {
   background-color: #7d97ad;
 }
 
+/* elements of bottom */
 #feature {
   width: 100%;
   display: flex;
@@ -110,6 +119,7 @@ hr {
   margin-top: 60px;
 }
 
+/* hidden menu */
 #hamburger {
   display: none;
   font-size: 2.5em;
@@ -118,12 +128,14 @@ hr {
   top: 20px;
 }
 
+/* image on header */
 #u-sign {
   float: left;
   width: 96px;
   height: 96px;
 }
 
+/* center */
 #game {
   margin: 15px;
   padding: 5px;
@@ -132,7 +144,7 @@ hr {
 }
 
 #canvas {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   display: block;
   width: 100%;
   height: 100%;
@@ -140,6 +152,7 @@ hr {
   padding: 0;
 }
 
+/* breakpoints */
 @media screen and (max-width: 915px) {
   .box-feature {
     width: 47%;
@@ -179,6 +192,7 @@ hr {
   }
 }
 
+/* animations */
 @keyframes change-shape {
     0% { transform: rotate3d(1, 0, 0, 0deg); background-color: #02b3e4;}
     25% { transform: rotate3d(3, 2, 0, 90deg); background-color: yellow;}
