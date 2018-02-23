@@ -47,7 +47,6 @@ const show = (this_one) => {
 
   // calculation of the enlargement
   let scale = ((window.innerWidth / initialRect.width) < (window.innerHeight / initialRect.height)) ? window.innerWidth / initialRect.width : window.innerHeight / initialRect.height;
-  console.log(window.innerWidth + "  " + window.innerHeight + "   sk = " + scale);
   scale = ((scale > 4) ? 4 : scale) * 0.95;
   scale = (scale > 1.2) ? scale * 0.9 : 1;
 
@@ -55,6 +54,7 @@ const show = (this_one) => {
   const endWidth = initialRect.width * scale;
   const endX = (scale == 1) ? tempX : (window.innerWidth - endWidth) / 2;
   const endY = (window.innerHeight - initialRect.height * scale) / 2;
+  const tempW = initialRect.width - endWidth;
 
   // blurring the background
   ground.style.filter = "blur(4px)";
@@ -75,9 +75,14 @@ const show = (this_one) => {
       pos -= 0.01;
       clon.style.top = (endY + tempY * pos) + 'px';
       clon.style.left = (endX + tempX * pos) + 'px';
-      clon.style.width = (endWidth + (initialRect.width - endWidth) * pos) + 'px';
-      // clon.style.height = (endHeight + (initialRect.height - endHeight) * pos) + 'px';
+      clon.style.width = (endWidth + tempW * pos) + 'px';
     }
   }, 7);
+
+  // after clicking, remove clon
+  clon.onclick = function() {
+    ground.style.filter = "blur(0)";
+    this.remove();
+  };
 
 };

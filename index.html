@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<!-- Project Udacity Front-End Web Developer Nanodegree  *Portfolio* -->
+<!-- author Bpgdan Pasterak 23/02/2018 -->
 <head>
   <title>Portfolio</title>
   <meta name="author" content="Bogdan Pasterak">
@@ -10,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Short+Stack" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   <script src="my-scrypt.js"></script>
-  <!-- scripts and stylesheet to show image, video itp without jQuery -->
+  <!-- scripts to show image, video itp without jQuery -->
   <script src="showBP.js"></script>
   <!-- Two scripts to handle canva in the middle of the page -->
   <!-- it comes from another project, it is not described, the project is not finished -->
@@ -20,6 +22,7 @@
 </head>
 <body>
   <div id="container" class="hideBP">
+    <!-- side bar in the form of a menu -->
     <aside>
       <div class="box-color">
         <p>#02b3e4</p>
@@ -34,7 +37,9 @@
         <div class="squere" id="color-3"></div>
       </div>
     </aside>
+    <!-- main part of the page -->
     <article>
+      <!-- heading -->
       <header>
         <img src="u_sign.png" alt="Udacity logo" id="u-sign" width="128" height="128">
         <p id="hamburger" onclick="showMenu();">
@@ -54,8 +59,10 @@
         </p>
         <hr>
       </header>
+      <!-- main part of the page -->
       <div id="game"><canvas id="canvas" width="0" height="0"></canvas></div>
       <h1>Featured Work</h1>
+      <!-- three responsive blocks at the bottom -->
       <div id="feature">
         <div class="box-feature">
           <video class="showBP" width="100%" autoplay loop>
@@ -96,7 +103,8 @@
             in JavaScript
           </p>
         </div>
-      </div>
+      </div> <!-- end of feature -->
     </article>
   </div>
 </body>
+</html>
