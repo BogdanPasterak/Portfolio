@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	myResize();
 
 
-	if (document.getElementById('container').contains(document.getElementById('game'))) {
+	if (document.getElementsByClassName('container')[0].contains(document.getElementById('game'))) {
 
 		initCanvas();
 

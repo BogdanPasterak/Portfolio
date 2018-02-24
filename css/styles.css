@@ -4,13 +4,13 @@
 /* main elements */
 html,
 body,
-#container {
+.container {
   width: 100%;
   font-family: Dosis, sans-serif;
   margin: auto;
 }
 
-#container {
+.container {
   min-width: 300px;
   display: flex;
   flex-direction: row;
@@ -120,7 +120,7 @@ hr {
 }
 
 /* hidden menu */
-#hamburger {
+.hamburger {
   display: none;
   font-size: 2.5em;
   position: absolute;
@@ -129,7 +129,7 @@ hr {
 }
 
 /* image on header */
-#u-sign {
+.u-sign {
   width: 96px;
   height: 96px;
   position: absolute;
@@ -171,10 +171,10 @@ hr {
     position: fixed;
     left: -140px;
   }
-  #u-sign {
+  .u-sign {
     left: 10px;
   }
-  #hamburger {
+  .hamburger {
     display: block;
   }
 }

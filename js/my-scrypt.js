@@ -68,13 +68,13 @@ const thirdSquere = () => {
 // TODO: Two functions to operate the hide-away menu
 
 const showMenu = () => {
-	document.getElementById("hamburger").style.display = "none";
+	document.getElementsByClassName("hamburger")[0].style.display = "none";
 	document.getElementsByTagName("aside")[0].style.left = "0";
 };
 
 const hideMenu = () => {
 	if (document.documentElement.clientWidth <= 765) {
-		document.getElementById("hamburger").removeAttribute("style");
+		document.getElementsByClassName("hamburger")[0].removeAttribute("style");
 		document.getElementsByTagName("aside")[0].removeAttribute("style");
 	}
 };
