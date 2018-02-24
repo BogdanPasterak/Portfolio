@@ -23,7 +23,7 @@ h1 {
 }
 
 aside {
-  min-width: 140px;
+  width: 140px;
   position: static;
   top: 0;
   left: 0;
@@ -33,7 +33,6 @@ article {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* background-color: yellow; */
 }
 
 header {
@@ -76,6 +75,10 @@ hr {
   font-size: 2em;
 }
 
+.box-color:first-child {
+  margin-top: 60px;
+}
+
 .box-color p {
   position: relative;
   bottom: -90px;
@@ -102,7 +105,7 @@ hr {
   background-color: #7d97ad;
 }
 
-/* elements of bottom */
+/* elements of bottom 3 or 2 or 1 columns */
 #feature {
   width: 100%;
   display: flex;
@@ -110,13 +113,10 @@ hr {
   margin: 0;
 }
 
+/* flex 3 columns */
 .box-feature {
   width: 32%;
   margin-left: 1%;
-}
-
-.box-color:first-child {
-  margin-top: 60px;
 }
 
 /* hidden menu */
@@ -130,9 +130,12 @@ hr {
 
 /* image on header */
 #u-sign {
-  float: left;
   width: 96px;
   height: 96px;
+  position: absolute;
+  left: 150px;
+  top: 10px;
+  z-index: -1;
 }
 
 /* center */
@@ -153,6 +156,8 @@ hr {
 }
 
 /* breakpoints */
+
+/* change to 2 columns */
 @media screen and (max-width: 915px) {
   .box-feature {
     width: 47%;
@@ -160,29 +165,29 @@ hr {
   }
 }
 
+/* hide the menu show hamburger */
 @media screen and (max-width: 765px) {
   aside {
     position: fixed;
     left: -140px;
+  }
+  #u-sign {
+    left: 10px;
   }
   #hamburger {
     display: block;
   }
 }
 
+/* change to 1 column */
 @media screen and (max-width: 550px) {
   .box-feature {
     width: 90%;
     margin-left: 5%;
   }
-  #u-sign {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    z-index: -1;
-  }
 }
 
+/* shorten the subtitles */
 @media screen and (max-width: 450px) {
   .full {
     display: none;
