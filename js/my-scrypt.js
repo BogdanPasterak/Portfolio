@@ -35,7 +35,7 @@ const firstSquere = () => {
 
 const secondSquere = () => {
   const boxFeature = document.getElementsByClassName("box-feature")[0];
-  const feature = document.getElementById("feature");
+  const feature = document.getElementsByClassName("feature")[0];
   // My challenge FadeOut and FadeIn without jQuery !!!
   boxFeature.style.animation = "fade-out 1s 1";
 
