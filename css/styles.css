@@ -40,6 +40,17 @@ header {
   padding: 10px 10px 0 10px;
 }
 
+footer {
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+span {
+  white-space: nowrap;
+}
+
 video {
   width: 100%;
   border: 3px solid lightgray;
