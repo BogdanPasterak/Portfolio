@@ -111,13 +111,14 @@ hr {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
   margin: 0;
 }
 
 /* flex 3 columns */
 .box-feature {
+  padding: 0 1% 0 0;
   width: 32%;
-  margin-left: 1%;
 }
 
 /* hidden menu */
@@ -159,8 +160,7 @@ hr {
 /* change to 2 columns */
 @media screen and (max-width: 915px) {
   .box-feature {
-    width: 47%;
-    margin-left: 2%;
+    width: 48%;
   }
 }
 
@@ -178,8 +178,7 @@ hr {
 /* change to 1 column */
 @media screen and (max-width: 550px) {
   .box-feature {
-    width: 90%;
-    margin-left: 5%;
+    width: 97%;
   }
   /* shorten the subtitles */
   .full {
