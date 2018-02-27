@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 // TODO: The first is a bit transformed using css keyframes
 
 const firstSquere = () => {
-  const squereOne = document.getElementById("color-1");
+  const squereOne = document.getElementsByClassName("color-1")[0];
 
   squereOne.style.animation = "change-shape 5s 1";
 

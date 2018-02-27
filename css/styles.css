@@ -6,11 +6,11 @@ html,
 body,
 .container {
   width: 100%;
-  font-family: Dosis, sans-serif;
   margin: auto;
 }
 
 .container {
+  font-family: Dosis, sans-serif;
   min-width: 300px;
   display: flex;
   flex-direction: row;
@@ -36,7 +36,6 @@ article {
 }
 
 header {
-  text-align: right;
   padding: 10px 10px 0 10px;
 }
 
@@ -44,11 +43,12 @@ footer {
   text-align: center;
   display: flex;
   flex-flow: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 span {
   white-space: nowrap;
+  margin: 0 15px;
 }
 
 video {
@@ -64,19 +64,29 @@ video {
 
 .short,
 .mini {
-    display: none;
+  display: none;
 }
 
 header > p {
-  margin: 1em 0 1em 0;
+  margin: 1em 0;
+}
+
+.two-sides {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.titles {
+  text-align: right;
 }
 
 /* line stylization */
 hr {
-    height: 12px;
-    border: 0;
-    margin: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  height: 12px;
+  border: 0;
+  margin: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
 /* elements in aside */
@@ -143,17 +153,14 @@ hr {
 
 /* image on header */
 .u-sign {
-  float: left;
   width: 96px;
   height: 96px;
-  z-index: -1;
 }
 
 /* center */
 #game {
   margin: 15px;
   padding: 5px;
-  height: 400px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -161,7 +168,6 @@ hr {
   background-color: white;
   display: block;
   width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
 }

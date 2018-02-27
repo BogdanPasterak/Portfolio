@@ -47,7 +47,7 @@ const initCanvas = () => {
 	const g = document.getElementById("game").getBoundingClientRect();
 
 	c.width = (g.width & 0xFFFE) - 10 ;
-	c.height = (g.height & 0xFFFE) - 10 ;
+	c.height = ((g.width * 0.618) & 0xFFFE) - 10 ; // gold proportion
 
 	const ctx = c.getContext('2d');
 
